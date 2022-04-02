@@ -178,7 +178,10 @@ body {
     -webkit-animation: giro 2.5s 1;
     animation: giro 2.5s 1;
   }
-  
+  .cardBox:nth-child(5) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+  }
   @-webkit-keyframes giro {
     from {
       transform: rotateY( 180deg);
