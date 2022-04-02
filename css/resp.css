@@ -113,6 +113,10 @@
     }
     
 }
+.center {
+    text-align: center;
+    border: 3px solid green;
+  }
 @media screen and (max-width: 800px) {
     .column-gallery {
         -ms-flex: 45%; 

@@ -39,7 +39,7 @@ body {
     width: 100%;
     -webkit-animation: giro 1s 1;
     animation: giro 1s 1;
-    color:white;
+    color:rgb(18, 19, 18);
   }
   
   .card p {
@@ -100,7 +100,7 @@ body {
   }
   
   .cardBox:nth-child(2) .card .back {
-    background: orange;
+    background: rgb(7, 7, 7);
     background: url('../assets/madapchhadan.webp');
     background-position:center;
     background-size: cover;
@@ -111,6 +111,7 @@ body {
     background: url('../assets/haldi-backdrop-on-indian-wedding-260nw-2099491168.webp');
     background-position:center;
     background-size: cover;
+    color: rgb(218, 28, 28);
   }
   
   .cardBox:nth-child(4) .card .back {
@@ -119,12 +120,26 @@ body {
     background-position:center;
     background-size: cover;
   }
+  .cardBox:nth-child(5) .card .back {
+    background: tomato;
+    background: url('../assets/ghoda.jpg');
+    background-position:center;
+    background-size: cover;
+  }
 
+  .cardBox:nth-child(6) .card .back {
+    /* background: cornflowerblue; */
+    background: url('../assets/su.jpg');
+    background-position:center;
+    background-size: cover;
+
+  }
   .cardBox:nth-child(1) .card .front {
     /* background: cornflowerblue; */
     background: url('../assets/kalash.jpg');
     background-position:center;
     background-size: cover;
+    color: #000;
 
   }
 
@@ -138,7 +153,7 @@ body {
 
   .cardBox:nth-child(3) .card .front {
     background: yellowgreen;
-    background: url('../assets/haldi-backdrop-on-indian-wedding-260nw-2099491168.webp');
+    background: url('../assets/dev.jpg');
     background-position:center;
     background-size: cover;
   }
@@ -149,14 +164,16 @@ body {
     background-position:center;
     background-size: cover;
   }
-    .cardBox:nth-child(5) .card .back {
-      background: tomato;
-      background: url('../assets/su.jpg');
-      background-position:center;
-      background-size: cover;
-    }
   
     .cardBox:nth-child(5) .card .front {
+      background: tomato;
+      background: url('../assets/car.jpg');
+      background-position:center;
+      background-size: cover;
+        
+    }
+  
+    .cardBox:nth-child(6) .card .front {
       /* background: cornflowerblue; */
       background: url('../assets/su.jpg');
       background-position:center;
