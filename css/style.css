@@ -254,7 +254,7 @@ footer .text-big{
 
 .popup{
     background-color: #ffffff;
-    width: 300px;
+    width: 220px;
     padding: 30px 40px;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -292,8 +292,8 @@ footer .text-big{
     text-align: justify;
     margin: 20px 0;
     line-height: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 bf{
     display: block;
