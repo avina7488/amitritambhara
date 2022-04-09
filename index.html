@@ -6,6 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h8>Chaurasia Family welcome you</h8>
+        <p>Mere mama ka shadi me jalul se jalul ana aapka intezar rahega Aapke aane tak .</p>
+        <h9>Saanvi, Maanvi, Chirag</h9>
+        <bf href="#">Dhanyawad</bf>
+    </div>
+  
   <title>Amit & Ritambhara</title>
   <meta property="og:title" content="Wedding Invitation: Amit and Ritambhara">
   <meta property="og:image" content="./assets/lp.jpg">
@@ -362,6 +371,59 @@
   </footer>
   <script src="./js/resp.js"></script>
   <script src="./js/countdown.js"></script>
+  <script>
+    function setCookie(cname,cvalue,exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    
+    function checkCookie() {
+      let user = getCookie("username");
+      if (user != "") {
+        alert("Amit kumar Raj invites you  " + user);
+      } else {
+         user = prompt("Please enter your name:","");
+         if (user != "" && user != null) {
+           setCookie("username", user, 30);
+         }
+      }
+    }
+    </script>
+    <script type="text/javascript">
+      window.addEventListener("load", function(){
+          setTimeout(
+              function open(event){
+                  document.querySelector(".popup").style.display = "block";
+              },
+              2000 
+          )
+      });
+      
+      
+      document.querySelector("#close").addEventListener("click", function(){
+          document.querySelector(".popup").style.display = "none";
+      });
+          </script>
+  <body onload="checkCookie()"></body>
+
 
 
 </body>
